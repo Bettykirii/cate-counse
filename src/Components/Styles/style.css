@@ -1,0 +1,260 @@
+/* Global Body Styling */
+body {
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  /* Makes the body take up the full viewport height */
+    overflow-x: hidden
+
+}
+
+/* Header Styling */
+header {
+    background-color: #FDFAF3; /* Light gray background */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+/* Logo Styling */
+.text-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(50, 83, 67); /* Green shade */
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.text-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(50, 83, 67); /* Green */
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #e9c46a; /* Golden yellow on hover */
+}
+
+nav a.cta-link {
+    background: transparent;
+    border: 2px solid rgb(50, 83, 67); /* Border with the same green as the text */
+    padding: 8px 16px;
+    font-size: 13px;
+    color: rgb(50, 83, 67);
+}
+
+nav a.cta-link:hover {
+    background: rgb(50, 83, 67);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: rgb(50, 83, 67);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #264653; /* Navy blue */
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.cta-text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e9c46a; /* Golden yellow */
+    padding: 1rem 0;
+}
+
+.cta-hr {
+    width: 50%;
+    margin: 0.5rem auto;
+    border: 1px solid #e9c46a;
+    border-radius: 2px;
+}
+
+/* Navbar Flexbox Fix */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer Inheritance */
+/* HomePage.css */
+
+.homepage {
+    color: white; /* White text */
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .text-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(50, 83, 67)
+  }
+  
+  .cta-button {
+    background-color: #e9c46a; /* Golden yellow button */
+    color: #264653;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #f4a261; /* Darker golden yellow */
+  }
+  
+  .homepage {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+.text-section {
+    flex: 1;
+    padding: 1rem;
+    color: white;
+}
+
+.cta-text p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color :#e9c46a;
+}
+.cta-text h6 {
+
+    color : rgb(50, 83, 67)
+}
+
+.cta-hr {
+    border: 0;
+    height: 1px;
+    background: #e9c46a; /* Golden yellow underline */
+    width: 20%;
+}
+
+.image-section {
+    
+        max-width: 700px; /* Increase the image size */
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    
+}
+
+.image-wrapper {
+    background-color: rgb(50, 83, 67); /* Golden yellow background */
+    padding: 10px 100px 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+
+.quote-text {
+    color: #333; /* Dark grey for text */
+    font-style: italic;
+    line-height: 0.8;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #555; /* Slightly lighter grey for author */
+    margin-top: 1px;
+}
+
+
+

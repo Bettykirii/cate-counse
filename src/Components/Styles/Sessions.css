@@ -1,0 +1,111 @@
+.therapy-intro-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  h1 {
+    color: #D18729; /* Dark Green */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+    
+  
+  }
+  
+  .intro-text {
+    color: rgb(50,83,67);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .fees-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    color: rgb(50,83,67);
+
+  }
+  
+  .fees-box, .forms-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fees-box h2, .forms-box h2 {
+    color: #D18729; /* Golden orange */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+  }
+  
+  .fee-item {
+    margin-bottom: 20px;
+  }
+  
+  .fee-item h3 {
+    font-size: 1.2rem;
+    color: rgb(50,83,67);
+  }
+  
+  .fee-item p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .forms-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .forms-box li {
+    margin-bottom: 10px;
+  }
+  
+  .forms-box li a {
+    text-decoration: none;
+    color: rgb(50,83,67); /* Dark teal */
+  }
+  
+  .forms-box li a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .fees-section {
+      flex-direction: column;
+    }
+  }
+  
+  
+  .contact-section h2 {
+    color: rgb(50,83,67);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: rgb(50, 83, 67);
+  }
+  .contact-button {
+    background: transparent;
+    border: 2px solid rgb(50, 83, 67); /* Border with the same green as the text */
+    padding: 8px 16px;
+    font-size: 13px;
+    color: rgb(50, 83, 67);
+}
+.contact-button:hover {
+    background: rgb(50, 83, 67);
+    color: #fff;
+    cursor: pointer;
+}
+
+  

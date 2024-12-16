@@ -1,0 +1,85 @@
+.contact-form-container {
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    font-size: 1.8rem;
+    color: rgb(50, 83, 67); /* Green text */
+    margin-bottom: 20px;
+}
+
+.contact-form-container label {
+    font-size: 1.2rem;
+    color: rgb(50, 83, 67); /* Green text */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #e9c46a; /* Underline instead of border */
+    background-color: transparent; /* No background */
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+}
+
+.submit-text {
+    color: rgb(50, 83, 67); /* Yellow color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer; /* Make it look like a clickable element */
+}
+.contact-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between the columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 0 auto;
+    max-width: 900px; /* Optional: Center container and limit width */
+}
+
+/* Style the contact-info container */
+.contact-info {
+    flex: 0 0 250px; /* Set a fixed width */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Optional: Style the headings and text */
+.contact-info h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e9c46a; /* Dark green-blue color */
+    font-weight: bolder;
+}
+
+.contact-info p {
+    margin: 80px 0;
+    font-size: 1rem;
+    color: rgb(50, 83, 67);
+}
+
+.contact-info a {
+    color: #2a9d8f; /* Green link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+

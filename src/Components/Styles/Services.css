@@ -1,0 +1,170 @@
+/* Container Styling */
+body{
+    background-color: #fafafa;
+    font-family: 'lora', serif;
+}
+.therapy-services-wrapper {
+    font-family: "Arial", sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #004f4f;
+    padding: 2rem;
+    background-color: #fafafa;
+  }
+  
+  /* Header Section */
+  .therapy-header {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .therapy-header h1 {
+    color: #e0791b;
+    font-size: 2.5rem;
+  }
+  .therapy-header .highlighted-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #004f4f;
+  }
+  .learn-more {
+    color: #e0791b;
+    text-decoration: none;
+    font-weight:normal;
+    margin-top: 1rem;
+  }
+
+
+ /* Therapy Content Section */
+.therapy-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically align content */
+    margin-bottom: 3rem; /* Spacing from other sections */
+}
+
+/* Vertical Line */
+.therapy-header .vertical-line {
+    width: 1px;
+    height: 100px;
+    background-color: #e0791b; /* Orange line */
+    margin-right: 20px; /* Space between line and text */
+}
+
+/* Text Content */
+/* Text Content */
+.text-content {
+    flex: 1; /* Takes available space */
+    padding-right: 2rem; /* Space between text and vertical line */
+    font-size: 1.1rem; /* Slightly larger font for p tags */
+    color: #333; /* Dark text color */
+}
+
+/* Learn More Link */
+.text-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #e0791b; /* Orange link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+/* Horizontal Line */
+.text-content hr {
+    margin-top: 0.5rem;
+    border: none;
+    height: 2px;
+    background-color: #e0791b; /* Orange color */
+    width: 80%; /* Half the width of the container */
+}
+
+
+/* Image Section */
+.therapy-content .therapy-image {
+    flex: 1; /* Takes equal space */
+    max-width: 50%; /* Restrict image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+    display: block;
+}
+
+  
+  /* Why Therapy Section */
+  .why-therapy {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-top: 3px solid #e0791b;
+  }
+  .why-therapy h2 {
+    color: #e0791b;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .why-therapy p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #004f4f;
+  }
+  /* Services Container */
+.services-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  color: #333; /* Text color */
+  font-family: 'Georgia', serif;
+}
+
+/* Section Headings */
+.services-container h2 {
+  color: #e0791b; /* Orange heading */
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* Paragraphs */
+.services-container p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Steps Container */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Step Styling */
+.step {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  color: #e0791b;
+  margin-bottom: 0.5rem;
+}
+
+/* Individual Therapy Section */
+.individual-therapy-box {
+  background-color: #f9f9f9; /* Box background */
+  border: 1px solid #e0791b; /* Orange border around the box */
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.individual-therapy-box h2 {
+  margin-bottom: 0.5rem;
+}
+
+.individual-therapy-box p {
+  font-size: 1.1rem;
+}
+
+  
