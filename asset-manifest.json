@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/cate-counse/static/css/main.e91b5c66.css",
+    "main.js": "/cate-counse/static/js/main.c10f7a10.js",
+    "static/js/453.1d57716e.chunk.js": "/cate-counse/static/js/453.1d57716e.chunk.js",
+    "static/media/nature.jpg": "/cate-counse/static/media/nature.4c1de4a91440056c2e75.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/cate-counse/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fa-solid-900.ttf": "/cate-counse/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/cate-counse/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fontawesome-webfont.eot": "/cate-counse/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/cate-counse/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fa-solid-900.woff2": "/cate-counse/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/cate-counse/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/cate-counse/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/cate-counse/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/fa-regular-400.ttf": "/cate-counse/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fa-regular-400.woff2": "/cate-counse/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/cate-counse/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/cate-counse/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/cate-counse/index.html",
+    "main.e91b5c66.css.map": "/cate-counse/static/css/main.e91b5c66.css.map",
+    "main.c10f7a10.js.map": "/cate-counse/static/js/main.c10f7a10.js.map",
+    "453.1d57716e.chunk.js.map": "/cate-counse/static/js/453.1d57716e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e91b5c66.css",
+    "static/js/main.c10f7a10.js"
+  ]
+}
