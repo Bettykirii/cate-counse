@@ -1,4 +1,6 @@
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css';
+
 import './Styles/Footer.css';
 
 const Footer = () => {
@@ -14,12 +16,12 @@ const Footer = () => {
 
             {/* About Section */}
             <div className="footer-column">
-                <h4>About</h4>
+                <h4>Location</h4>
                 <p>
-                    Catherine Mitchell Therapy is committed to helping you embrace your true self.
-                    Together, we work toward meaningful change and growth.
+                    Street :
+                    Road:
                 </p>
-            </div>
+            </div> 
 
             {/* Social Media Links */}
             <div className="footer-column">

@@ -13,6 +13,21 @@
     color: rgb(50, 83, 67); /* Green text */
     margin-bottom: 20px;
 }
+/* Parent container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content */
+.content {
+    flex: 1; /* Takes up available space */
+    padding: 20px; /* Optional: Adds padding */
+}
+
+
+
 
 .contact-form-container label {
     font-size: 1.2rem;
@@ -81,5 +96,11 @@
     text-decoration: underline;
 }
 
+.map-container {
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden; /* To round the iframe corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 

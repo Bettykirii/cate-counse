@@ -1,0 +1,101 @@
+/* Base Styles for Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.text-logo a {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Hide Menu Toggle for Large Screens */
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle button on small screens */
+    }
+
+    nav {
+        position: absolute;
+        top: 100%; /* Below the navbar */
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0; /* Reset gap */
+        display: none; /* Default state is hidden */
+    }
+
+    .nav-open {
+        display: flex; /* Show menu when open */
+    }
+
+    .nav-closed {
+        display: none; /* Ensure it's hidden when closed */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}

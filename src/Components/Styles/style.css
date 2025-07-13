@@ -1,7 +1,6 @@
 /* Global Body Styling */
 body {
     font-family: 'Lora', serif;
-    font-size: 14px;
     margin: 0;
     padding: 0;
     min-height: 100vh;  /* Makes the body take up the full viewport height */
@@ -17,7 +16,13 @@ header {
     justify-content: center;
     align-items: center;
     position: sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
 }
+
+
 
 /* Logo Styling */
 .text-logo {
@@ -52,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e9c46a; /* Golden yellow on hover */
+    color: #E0813F; /* Golden yellow on hover */
 }
 
 nav a.cta-link {
@@ -61,6 +66,8 @@ nav a.cta-link {
     padding: 8px 16px;
     font-size: 13px;
     color: rgb(50, 83, 67);
+    max-width: 200px; /* Optional: Limit its width */
+
 }
 
 nav a.cta-link:hover {
@@ -80,181 +87,322 @@ nav a.cta-link:hover {
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #264653; /* Navy blue */
-        padding: 1rem 0;
-        text-align: center;
-    }
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Show toggle button on small screens */
+  }
 
-    nav ul.active {
-        display: flex;
-    }
+  nav {
+      position: absolute;
+      top: 100%; /* Below the navbar */
+      left: 0; /* Align menu to the left */
+      background-color: #FDFAF3;
+      width: 70%; /* Smaller width for the menu */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0; /* Reset gap */
+      display: none; /* Default state is hidden */
+      z-index: 100; /* Ensure it is above other elements */
+      padding: 0.5rem 1rem; /* Add some padding */
+  }
 
-    .menu-toggle {
-        display: block;
-    }
+  .nav-open {
+      display: flex; /* Show menu when open */
+  }
+
+  .nav-closed {
+      display: none; /* Ensure it's hidden when closed */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack menu items vertically */
+      width: 100%;
+      padding: 0; /* Remove extra padding */
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem 0; /* Add some padding between items */
+      border-bottom: 1px solid #ddd;
+  }
+
+  nav ul li a {
+      display: block;
+      width: 100%;
+      font-size: 0.9rem; /* Smaller font size for mobile */
+      color: #333;
+      text-decoration: none;
+  }
 }
 
 /* Hero Section */
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
 
-.cta-text {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #e9c46a; /* Golden yellow */
-    padding: 1rem 0;
-}
-
-.cta-hr {
-    width: 50%;
-    margin: 0.5rem auto;
-    border: 1px solid #e9c46a;
-    border-radius: 2px;
-}
 
 /* Navbar Flexbox Fix */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
+
 }
 
 /* Footer Inheritance */
 /* HomePage.css */
 
-.homepage {
-    color: white; /* White text */
-    padding: 4rem 2rem;
+/* Hero Section Container */
+.hero {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b') no-repeat center center;
+    background-size: cover;
+    padding: 20px; /* Add padding inside the section */
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
   }
   
-  .content-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
   }
   
-  .text-section {
-    flex: 1;
-    padding: 1rem;
+  .hero-content {
+    z-index: 2;
   }
   
-  .text-section h1 {
-    font-size: 2.5rem;
+  .hero h1 {
+    font-size: 3rem;
+    color : #e0791b;
     margin-bottom: 1rem;
   }
   
-  .text-section p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: rgb(50, 83, 67)
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+.cta-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; /* or any color you prefer */
+    text-align: center;
   }
   
-  .cta-button {
-    background-color: #e9c46a; /* Golden yellow button */
-    color: #264653;
-    border: none;
-    padding: 0.8rem 1.5rem;
+  hr {
+    margin-top: 10px;
+    border: 1px solid #c06e1d;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  .therapy-header {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .therapy-header h1 {
+    font-size: 36px; /* Adjust font size */
+    color: #333; /* Text color */
+    font-weight: bold; /* Font weight */
+    text-align: left; /* Align text (center, left, or right) */
+    margin-bottom: 20px; /* Space below the h1 */
+    line-height: 1.4; /* Adjust spacing between lines */
+    font-family: 'Arial', sans-serif; /* Change font */
+}
+.highlighted-text {
+  font-size: 1rem; /* Adjusted font size */
+  line-height: 1.6; /* Spacing between lines */
+  color: rgb(50, 83, 67); /* Updated green color */
+  font-family: 'Georgia', serif; /* Change font */
+  margin-bottom: 2rem; /* Adjust as needed */
+}
+  .therapy-services-wrapper.hero-quote {
+    float: right; /* Makes the blockquote float on the right */
+    max-width: 300px; /* Limit the width of the blockquote */
+    margin: 20px; /* Adds spacing between the blockquote and the edges */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  
+  .hero-quote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: italic; /* Makes the text italic */
+
+    font-weight: bold;
+    color: #e0791b; /* Highlight color for the author name */
+  }
+
+ /* Therapy Content Section */
+ .therapy-services-wrapper {
+    font-family: "Arial", sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    background-color: #fafafa;
+  }
+.therapy-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically align content */
+    margin-bottom: 3rem; /* Spacing from other sections */
+}
+
+/* Vertical Line */
+.therapy-header .vertical-line {
+    width: 1px;
+    height: 100px;
+    background-color: #0f2c25; /* Orange line */
+    margin-right: 20px; /* Space between line and text */
+}
+
+/* Text Content */
+/* Text Content */
+.text-content {
+    flex: 1; /* Takes available space */
+    padding-right: 2rem; /* Space between text and vertical line */
+    font-size: 1.1rem; /* Slightly larger font for p tags */
+}
+
+/* Learn More Link */
+.text-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #e0791b; /* Orange link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+.how-i-help {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Georgia', serif;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Section Headers */
+  .section-title {
+    color: #d18729;
     font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
   }
   
-  .cta-button:hover {
-    background-color: #f4a261; /* Darker golden yellow */
+  .section-subtitle {
+    font-size: 2rem;
+    color: #0f2c25;
+    margin-bottom: 2rem;
   }
   
-  .homepage {
-    padding: 4rem 2rem;
+  /* Therapy Cards */
+  .therapy-cards {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.content-container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
-}
-
-.text-section {
-    flex: 1;
-    padding: 1rem;
-    color: white;
-}
-
-.cta-text p {
-    font-size: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align the cards to the top */
+  }
+  
+  .therapy-card {
+    border: 1px solid #d18729;
+    padding: 2rem;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .therapy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adjusting margin to make the second card appear lower */
+  .therapy-card:nth-child(2) {
+    margin-top: 20px; /* Lower the second card */
+  }
+  
+  .therapy-title {
+    font-size: 1.5rem;
+    color: rgb(50, 83, 67);
+    margin-bottom: 1rem;
+  }
+  
+  .therapy-list {
+    list-style-type: none;
+    color: rgb(50, 83, 67);
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .therapy-list li {
     margin-bottom: 0.5rem;
-    color :#e9c46a;
-}
-.cta-text h6 {
-
-    color : rgb(50, 83, 67)
-}
-
-.cta-hr {
-    border: 0;
-    height: 1px;
-    background: #e9c46a; /* Golden yellow underline */
-    width: 20%;
-}
-
-.image-section {
-    
-        max-width: 700px; /* Increase the image size */
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover;
-    
-}
-
-.image-wrapper {
-    background-color: rgb(50, 83, 67); /* Golden yellow background */
-    padding: 10px 100px 10px 10px;
-    border-radius: 10px;
+    color: rgb(50, 83, 67);
+    font-size: 1rem;
+  }
+  
+  /* Learn More Link */
+  .learn-more {
+    text-decoration: none;
+    color: #d18729;
+    font-weight: bold;
+    font-size: 1rem;
     display: inline-block;
-}
-
-.image-wrapper img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
-}
-
-
-.quote-text {
-    color: #333; /* Dark grey for text */
-    font-style: italic;
-    line-height: 0.8;
-}
-
-.quote-author {
-    text-align: right;
-    font-size: 0.8rem;
-    color: #555; /* Slightly lighter grey for author */
-    margin-top: 1px;
-}
-
-
-
+    transition: color 0.3s ease;
+  }
+  
+  .learn-more .arrow {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .learn-more:hover {
+    color: #c06e1d;
+  }
+  
+  .learn-more:hover .arrow {
+    transform: translateX(5px);
+  }
+  
